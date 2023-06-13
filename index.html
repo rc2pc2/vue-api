@@ -5,8 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vue Api Livecoding</title>
-
-
         <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
@@ -18,18 +16,17 @@
         <div id="app">
 
             <h1 v-if="userNumber">
-                Numero utente: {{ userNumber }}
+                User randomly generated number is: {{ userNumber }}
             </h1>
 
             <h1 v-if="pcNumber">
-                Numero pc: {{ pcNumber }}
+                PC randomly generated number is: {{ pcNumber }}
             </h1>
 
             <h1 v-if="pcNumber && userNumber">
-                Vinceeeeeee
+                The winner is...
                 {{ userNumber > pcNumber ? 'il PC!' : ' l\'utente!!'  }}
             </h1>
-
         </div>
 
         <script src="js/script.js"></script>
