@@ -9,15 +9,12 @@ createApp({
     },
 
     methods:{
-        // getNewRandomNumber(){
-        // }
+
 
     },
 
     created(){
-        // ? quando l'applicazione è stata creata e ancora non è montata
-        // this.getNewRandomNumber();
-
+        // ? this hook is executed at the creation of this Vue instance
         axios.get('https://flynn.boolean.careers/exercises/api/random/int')
         .then( (response) => {
             // § se e quando il server risponde
